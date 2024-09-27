@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
-@media screen and (min-width:768px)and (max-width:992) {
-
 body{
-    background-image: linear-gradient(black, white);
+    background-image: linear-gradient(black, rgb(11, 11, 87));
+}
+main{
+    display:inline-flex;
+    background-color: white;
+
+}
+img{
+    width: 250px;
+}
+h1{
+    text-align: center;
 }
 
-
-}
-    
