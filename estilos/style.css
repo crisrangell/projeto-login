@@ -14,48 +14,58 @@ html, body{
     position: absolute;
 }
 
-section{
+main{
     background-color: white;
     width: 300px;
+    border-radius: 10px;
     position: relative;
     top: 50%;
-    
-    
-    
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 }
 
 section#img{
+    display: block;
     background-image: url(../imagens/foto\ principal600.jpg);
     height: 200px;
+    border-radius: 10px 10px 0px 0px;
 }
 
+section#formulario{
+    display: block;
+    height: 300px;
+    
+}
 
 h1{ text-align: center;
     font-size:1.4em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
 }
 
 p#sub{ 
-    display: block;
     font-size: 0.8em;
-    text-align: center;
+    text-align: justify;
+    width: 250px;
+    padding: 0px;
+    margin: auto;
+    margin-bottom: 10px;
 }
-
 p.login{  
     background-color: rgb(11, 11, 52);
     color: white;
-    width: 220px;
+    width: 250px;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 
 input{
     background-color: white;
     border:none;
-    height:40px;
-    width:191px;
+    height:38px;
+    width:220px;
     border-radius: 10px;
 }
 
@@ -63,7 +73,7 @@ input.botao{
     display: block;
     background-color: rgb(17, 17, 83);
     color: white;
-    width: 220px;
+    width: 250px;
     height: 40px;
     margin: auto;
     margin-bottom: 5px;

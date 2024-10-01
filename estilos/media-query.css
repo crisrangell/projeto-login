@@ -1,7 +1,70 @@
 
 @media screen  and (min-width:768px) and (max-width:992px) {
 
+main{
+    width: 500px;
+    height: 300px;
+}    
+
 section#img{
+    height: 300px;
     float: left;
+    width: 200px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.443);
 }
+
+p#sub{
+    float: right;
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+div#login{
+    padding-right: 25px;
+    float: right;
+}
+div#senha{
+    padding-right: 25px;
+    float: right;
+    padding-bottom: 10px;
+}
+}
+
+@media screen  and (min-width:992px) {
+
+    main{
+        width: 600px;
+        height: 300px;
+    }    
+    
+    section#img{
+        height: 300px;
+        float: right;
+        width: 300px;
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.443);
+    }
+    
+    p#sub{
+        float: right;
+        width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+    
+    div#login{
+        padding-right: 25px;
+        float: right;
+    }
+    div#senha{
+        padding-right: 25px;
+        float: right;
+        padding-bottom: 10px;
+    }
+
+
 }
