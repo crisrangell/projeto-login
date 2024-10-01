@@ -4,39 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="estilos/style.css" media="screen and (orientation: portrait) " >
-    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (orientation: landscape) ">
+    <link rel="stylesheet" href="estilos/style.css" >
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Login</title>
 </head>
 <body>
    
     <main>
-        <img src="imagens/foto principal600.jpg" alt=" Estrelas">
+        <section id="img">
+            <!---FOTO AQUI-->
+        </section>
+        <section >
 
-        <h1>Login</h1>
-        <p id="sub">Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
-        </p>
+            <h1>Login</h1>
+            <p id="sub">Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+            </p>
+            <form action="cadastro.php" method="post" autocomplete="off">
+                <div>
+                    <p class="login"><label for="iemail">
+                        <span class="material-symbols-outlined">person</span>
+                    </label>
+                    <input type="email" name="email" id="iemail" placeholder=" Seu email" minlength="10" maxlength="30" autocomplete="email" required></p>
+                </div>
+                <div id="formulario">
+                    <p class="login"><label for="ikey">
+                        <span class="material-symbols-outlined">key</span>
+                    </label>
+                    <input type="password" name="key" id="ikey" placeholder=" Sua senha" minlength="6" maxlength="8" autocomplete="current-password" required></p>
+                </div>
 
-        <form action="cadastro.php" method="post" autocomplete="off">
+                <div>
+                    <p><input class="botao" type="submit" value="Entrar"></p>
+                </div>
 
-            <p class="login"><label for="iemail">
-                <span class="material-symbols-outlined">person</span>
-            </label>
-
-            <input type="email" name="email" id="iemail" placeholder=" Seu email" minlength="10" maxlength="30" autocomplete="email" required></p>
-
- 
-            <p class="login"><label for="ikey">
-                <span class="material-symbols-outlined">key</span>
-            </label>
-        
-            <input type="password" name="key" id="ikey" placeholder=" Sua senha" minlength="6" maxlength="8" autocomplete="current-password" required></p>
-
-
-            <p><input class="botao" type="submit" value="Entrar"></p>
-
-            <p><input class="botao" type="submit" value="Esqueci a senha"></p>
-        </form>
+                <div>
+                    <p><input class="botao" type="submit" value="Esqueci a senha"></p>
+                </div>
+            </form>
+        </section>
 
     </main>
 
